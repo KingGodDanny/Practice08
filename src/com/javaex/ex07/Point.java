@@ -10,7 +10,21 @@ public class Point {
 		this.y = y;
 	}
 
-	//equals() 메소드를 작성하세요.
+	@Override
+	public boolean equals(Object obj) {
+		if ( this.x == ((Point)obj).x) {
+			return true;
+		} else { 
+			
+			return false;
+		}
+	}
 
+	
+	
+	
+
+
+	
 	
 }
