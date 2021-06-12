@@ -7,8 +7,14 @@ public class FileApp {
 	public static void main(String[] args) {
 
 		// try~catch문을 사용하여 에러를 수정하세요
-		fileRead();
 
+		try {
+			fileRead();  //밑에 fileRead메소드안에 에러를 던지는 코딩이 여기로 들어오는것.
+		} catch (IOException e) {
+			System.out.println("파일이 없습니다.");
+		}
+			
+		
 	}
 
 	// 수정하지 마세요
